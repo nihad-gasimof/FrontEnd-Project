@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product - L. Chen Jewelry</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>WIX</h1>
+        <a href="login.html">Logout</a>
+    </header>
+    <nav>
+        <div class="hrefler">
+            <a href="index.html">Home</a>
+            <a href="admin.html">Admin</a>
+        </div>
+        <p>Nihad.Gasimov</p>
+        <div class="inputs">
+            <input type="text" placeholder="Search">
+            <p>Cart(0)</p>
+        </div>
+    </nav>
+
+    <section class="form-container">
+        <div class="form-header">
+            <h1>Add New Product</h1>
+            <a href="admin.html" class="back-btn">← Back to Admin</a>
+        </div>
+
+        <form id="addProductForm" class="add-product-form">
+            <div class="form-group">
+                <label for="productName">Product Name *</label>
+                <input type="text" id="productName" name="productName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="productPrice">Price *</label>
+                <input type="number" id="productPrice" name="productPrice" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="productDescription">Description *</label>
+                <textarea id="productDescription" name="productDescription" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="productImage">Image URL *</label>
+                <input type="url" id="productImage" name="productImage" required>
+            </div>
+
+        
+            <div class="form-actions">
+                <button type="submit" class="btn-submit">Add Product</button>
+                <a href="admin.html" class="btn-cancel">Cancel</a>
+            </div>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/script/script.js"></script>
+</body>
+
+</html>
